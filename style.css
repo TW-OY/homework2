@@ -6,16 +6,21 @@
   font-size: 100%;
   vertical-align: baseline;
 }
+
+h4.center_h5 {
+    display: block;
+}
 header{
     background-image: url(images/sunset-resized.jpg);
     height: 854px;
     background-repeat: no-repeat;
     background-position: 50% 3%;
+    -webkit-filter: brightness(0.8);
 }
 a{
     text-decoration: none;
 }
-h2{
+#header_LOGO{
     color: white;
     font-size: 46px;
     /* left: 183px; */
@@ -28,18 +33,10 @@ h2{
 
 
 
-table#header_table {
-    float: right;
-    position: relative;
-    /* right: 169px; */
-    top: -40px;
-    color: white;
-    border-collapse: separate;
-    border-spacing: 33px;
-}
 
-td#header_signup {
-    border: solid;
+
+#header_signup {
+    border: solid 1px;
 }
 
 h1#header_topic {
@@ -56,7 +53,7 @@ body {
 }
 
 
-div#header_class {
+#header_bottom {
     margin-top: 259px;
     text-align: center;
 }
@@ -67,20 +64,20 @@ h3#header_subtopic {
     margin-bottom: 0;
 }
 
-div#header_search {
+#header_search {
     margin-top: 25px;
 }
 
 input[type="text"] {
     height: 60px;
-    width: 460px;
+    width: 498px;
     font-size: 20px;
 }
 
 a.search {
     background: #69DDA6;
     color: white;
-    padding: 23px;
+    padding: 22px 32px;
 }
 
 li.list1 {
@@ -96,9 +93,11 @@ li.list1 {
 
 ul {
     text-align: center;
-    position: relative;
-    top: 35px;
-    left: 60px;
+    list-style-type: none;
+}
+
+#center_multi1 {
+    margin: 29px 191px;
 }
 
 li.list1 h5 {
@@ -120,7 +119,7 @@ h5.center_h4 {
     /* height: 80px; */
 }
 
-div#center {
+#content{
     border-bottom-color: #F4F3F1;
 }
 
@@ -143,20 +142,19 @@ ul#list1 {
 }
 
 hr.half-center {
-width: 35px;background-color: #E6E6E6;height: 2px;position: relative;left: 120px;}
+width: 35px;background-color: #E6E6E6;height: 2px;margin: 0 auto;}
 
 .feature1 {
     text-align: center;
     display: inline-block;
     margin-right: 54px;
-    float: left;
 }
 
 
-h5.center_h5 {
+h4.center_h5 {
     text-align: center;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Arial Black', Gadget, sans-serif;
 }
 
@@ -170,6 +168,13 @@ h5.center_h5 {
 }
 
 div {}
+
+#main_middle1 {
+    /* text-align: center; */
+    margin: 50px auto;
+    height: 98%;
+    min-height: 200px;
+}
 
 div#circle {
     margin: 5px;
@@ -194,30 +199,24 @@ div#circle {
 #inline2 {
 position: relative;top: 234px;color: black;}
 
-hr#inline {
-    width: 50%;
-    position: relative;
-    top: 50px;
-    color: black;
-    height: 2px;
-    /* margin: 0 auto; */
-    /* display: inline-block; */
-    z-index: -1;
-}
+#inline {
+height: 0px;color: black;}
 
 div#center_multi1 {
 margin-top: 60px;}
 
 .multi h5 {
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Arial Black', Gadget, sans-serif;
+    color: #4D4D4D;
 }
 
 .multi p {
-    font-size: 5px;
+    font-size: 14px;
     text-align: center;
     height: 70px;
     width: 280px;
+    color: #9B9B9B;
 }
 
 div#choose {
@@ -242,9 +241,6 @@ div#choose {
 margin-left: 50px;}
 
 hr.half-center {
-    position: relative;
-    left: 120px;
-    top: 2px;
 }
 
 hr#half-center2 {
@@ -253,21 +249,24 @@ hr#half-center2 {
 }
 
 .feature2 {
-    float: left;
-}
+display: inline-block;}
 
 .feature2 img {
     margin-right: 10px;
     margin-bottom: 40px;
-    float: left;
+    display: inline-block;
 }
 
 .feature2 h5 {
-    float: left;
+}
+
+.feature2 h5 {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .feature2 p {
-text-align: left;height: 120px;width: 423px;float: left;position: relative;top: 36px;left: -47px;}
+text-align: left;height: 120px;width: 423px;position: relative;top: -41px;left: -48px;display: inline-block;}
 
 div#center_multi2 {
     margin-top: 80px;
@@ -280,13 +279,13 @@ div#center_button {
 a.button:first-child {
     background: #60677B;
     color: white;
-    padding: 25px;
+    padding: 25px 25px;
 }
 
 a.button {
     background: white;
     color: #60677b;
-    padding: 25px;
+    padding: 25px 25px;
 }
 
 div#center_docs {
@@ -302,11 +301,12 @@ div#center_docs {
 #center_docs p:nth-child(2) {
 padding-top: 4px;text-align: center;height: 146px;width: 850px;margin: 0 auto;font-size: 25px;}
 
-div#center_face img {
+#center_face img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    margin: 0px 85px;
+    margin: 0px 85px;.filter:g;
+    -webkit-filter: grayscale(1) opacity(0.4);
 }
 
 div#center_face {
@@ -317,7 +317,10 @@ div#center_face {
 div#footer_search {
     text-align: center;
     margin-top: 90px;
-    padding: 49px;
+    margin-bottom: 20px;
+    padding: 80px;
+    background-image: url(images/sunset-resized.jpg);
+    background-position: 105% 46%;
 }
 
 div#footer_search p {
@@ -361,4 +364,99 @@ a.footdoc {
 
 #footer_social a {
     padding: 11px;
+}
+
+#header_top {
+    margin: 0 190px;
+}
+
+.header_button {
+    margin: -3px;
+    float: right;
+}
+
+.header_button a {
+    color: white;
+    padding: 0 15px;
+}
+
+#header_title {
+font-size: 35px;color: white;}
+
+#header_subtitle {
+    padding-top: 10px;
+    color: white;
+}
+
+input.search {
+    color: white;
+    background-color: #6BDDA0;
+    padding: 20px;
+}
+
+#main_top li {
+width: 120px;display: inline-block;padding: 41px 50.5px;border: solid #E5E4E3 1px;background-color: #F4F3F1;}
+
+#main_top {
+    height: 100px;
+    margin: 0 auto;
+    width: 68%;
+    position: relative;
+    top: -70px;
+}
+
+#main_top li:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#main_top li:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+    left: 20px;
+}
+
+#main_top h5 {
+    font-size: 27px;
+    font-weight: bolder;
+    padding-bottom: 8px;
+    color: #4D4D4D;
+}
+
+#main_top p {
+    color: #AAAAAC;
+    font-size: 12px;
+}
+
+#main_top li:nth-child(2) {
+    position: relative;
+    left: 10px;
+}
+
+.feature1 span {
+    border-radius: 51%;
+    border: solid 1px grey;
+    font-size: 15px;
+    padding: 16px;
+    height: 10px;
+    width: 10px;
+    display: block;
+    vertical-align: top;
+    margin: 0 119px;
+    /* text-align: center; */
+}
+
+ul#center_multi2 {
+    margin: 36px 0;
+}
+
+#background {
+    background-image: url(images/sunset-resized.jpg);
+    z-index: -1;
+    width: 100%;
+}
+
+#center_face img:hover {
+    -webkit-filter: grayscale(0);
 }
